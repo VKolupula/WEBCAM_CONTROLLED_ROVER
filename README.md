@@ -10,3 +10,7 @@ The Webcam Controlled Rover project consists of a programmable robot that can co
 
 radius of rotation (R), rate of rotation (w), instantaneous center of curvature (ICC), wheel velocities (v1,v2), distance between the wheels (L) and the forward velocity (V). 
 For more info on Differential Drive Robots: https://content.arduino.cc/assets/icckinematics.pdf
+
+![VrVlformula](https://user-images.githubusercontent.com/120835150/221384363-47a95088-8770-40f2-9b4f-1b0048e30852.PNG)
+
+![R_w_formula](https://user-images.githubusercontent.com/120835150/221384368-c11c8ed1-da5b-48d7-9428-9dd675bb64ff.PNG)
