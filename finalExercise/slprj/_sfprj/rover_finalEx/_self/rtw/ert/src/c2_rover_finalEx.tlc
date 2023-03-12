@@ -1,0 +1,53 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   5 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_c2_rover_finalEx"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "cmXOldValue"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "cmXOldValue"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "cmYOldValue"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "cmYOldValue"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "headingOldValue"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "headingOldValue"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c2_rover_finalEx"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
